@@ -12,6 +12,7 @@ const updateCountDisplay = (count:number) => {
 const increment = (count:number) => {
     count += 1;
     updateCountDisplay(); 
+    return count + 1
 
 };
 
@@ -19,12 +20,14 @@ const increment = (count:number) => {
 const decrement = (count:number) => {
     count -= 1;
     updateCountDisplay();
+    return count - 1
 };
 
 // Reset the count
 const reset = (count:number) => {
     count = 0;
     updateCountDisplay();
+    return count = 0
 
 };
 
