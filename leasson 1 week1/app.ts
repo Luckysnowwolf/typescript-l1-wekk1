@@ -2,32 +2,32 @@
 let count: number = 0;
 let draftcount: string | number;
 
+
 // Update the count display
-const updateCountDisplay = (count:number) => {
+const updateCountDisplay = (element:HTMLElement) => {
     const countElement = document.getElementById('count');
-    countElement.textContent = count;
+    countElement.textContent = count.toString();
 };
 
 // Increment the count
-const increment = (count:number) => {
+const increment = (count:number) : void => {
     count += 1;
     updateCountDisplay(); 
-    return count + 1
 
 };
 
 // Decrement the count
-const decrement = (count:number) => {
+const decrement = (count:number) : void => {
     count -= 1;
     updateCountDisplay();
-    return count - 1
+
 };
 
 // Reset the count
-const reset = (count:number) => {
+const reset = (count:number) : void => {
     count = 0;
     updateCountDisplay();
-    return count = 0
+
 
 };
 
