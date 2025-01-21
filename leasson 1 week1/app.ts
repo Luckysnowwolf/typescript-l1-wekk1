@@ -32,6 +32,6 @@ const reset = (count:number) : void => {
 };
 
 // Attach event listeners to buttons
-document.getElementById('increment-button').onclick = increment;
-document.getElementById('decrement-button').onclick = decrement;
-document.getElementById('reset-button').onclick = reset;
+document.getElementById('increment-button')as HTMLElement).onclick = increment;
+document.getElementById('decrement-button')as HTMLElement).onclick = decrement;
+document.getElementById('reset-button')as HTMLElement).onclick = reset;
